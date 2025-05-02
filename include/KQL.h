@@ -4,7 +4,7 @@
 
 #include "km_common.h"
 
-namespace KeyTools {
+namespace keytools {
 
 	class KQL {
 
@@ -12,6 +12,7 @@ namespace KeyTools {
 
 		static QueryCore get_core_enum(const std::string& core_token);
 		static bool is_core_token(const std::string& token);
+		static bool validate_adherent_syntax(const std::vector<std::string>& tokens);
 
 		static const std::shared_ptr<std::array<std::string, 7>>& core_tokens();
 

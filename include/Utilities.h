@@ -4,7 +4,7 @@
 
 #include "km_common.h"
 
-namespace KeyTools {
+namespace keytools {
 
 	class Utilities {
 

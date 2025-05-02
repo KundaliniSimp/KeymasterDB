@@ -19,8 +19,8 @@ private:
 	QueryStatus m_status;
 	QueryCore m_core;
 
-	std::vector<std::string> tokens;
-	std::shared_ptr<IOManager> io_manager_handle;
+	std::vector<std::string> m_tokens;
+	std::shared_ptr<IOManager> m_io_manager_handle;
 
 	void create();
 	void execute();
