@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef KM_COMMON_H
+#define KM_COMMON_H
 
 #include <string>
 #include <array>
@@ -9,7 +9,9 @@
 #include <memory>
 #include <iostream>
 
-#include "Enumerations.h"
+#include "enumerations/QueryCore.h"
+#include "enumerations/QueryStatus.h"
+#include "enumerations/WranglerCall.h"
 
 #endif 
 

@@ -19,16 +19,16 @@ bool keytools::KQL::is_core_token(const std::string& token) {
 	return token_index > -1;
 }
 
-bool keytools::KQL::validate_adherent_syntax(const std::vector<std::string>& tokens) {
+bool keytools::KQL::is_syntax_valid(const std::vector<std::string>& tokens) {
 
-
+	return false;
 }
 
 const std::shared_ptr<std::array<std::string, 7>>& keytools::KQL::core_tokens() {
 
 	static auto tokens = std::make_shared<std::array<std::string, 7>>
 						(std::array<std::string, 7> 
-						{ "INSERT", "GET", "UPDATE", "REMOVE", "EXIT", "NONE" });
+						{ "INSERT", "GET", "UPDATE", "REMOVE", "EXIT" });
 	
 	return tokens;
 }

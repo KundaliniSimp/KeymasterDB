@@ -1,8 +1,9 @@
 #include "Query.h"
 
-Query::Query(const std::shared_ptr<IOManager>& _io_manager_handle) : m_io_manager_handle(_io_manager_handle), 
-																	 m_core(QueryCore::NONE), 
-																	 m_status(QueryStatus::PENDING) {}
+Query::Query(const std::shared_ptr<IOManager>& io_manager_handle) : m_io_manager_handle(io_manager_handle), 
+																	m_core(QueryCore::NONE), 
+																	m_status(QueryStatus::PENDING), 
+																	m_response() {}
 
 void Query::resolve() {
 
@@ -44,4 +45,9 @@ QueryStatus Query::status() {
 QueryCore Query::core() {
 	
 	return m_core;
+}
+
+QueryResponse Query::response() {
+
+	return m_response;
 }

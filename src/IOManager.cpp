@@ -51,6 +51,6 @@ void IOManager::to_uppercase(std::string& input) {
 void IOManager::to_lowercase(std::string& input) {
 
 	for (unsigned long i = 0; i < input.length(); ++i) {
-		input[i] = toupper(input[i]);
+		input[i] = tolower(input[i]);
 	}
 }
